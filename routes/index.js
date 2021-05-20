@@ -7,5 +7,9 @@ const apiRouter = require('./api');
 
 router.use('/api', apiRouter);
 
+router.get('/', (req, res) => {
+    res.render("landing-page");
+})
+
 
 module.exports = router;

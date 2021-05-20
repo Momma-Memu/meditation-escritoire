@@ -25,7 +25,8 @@
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "node-fetch": "^2.6.1",
-    "per-env": "^1.0.2"
+    "per-env": "^1.0.2",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
