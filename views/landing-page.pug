@@ -8,5 +8,18 @@ html(lang="en")
     body
         div(class="header-bar") 
             span(class="header-title") Meditation Escritoire
-        each ticket in tickets 
-            div=ticket.subject
+        table(class="ticket-table")
+            tr(class="ticket-table-row")
+                th(class="ticket-table-header") Subject
+                th(class="ticket-table-header") Status 
+                th(class="ticket-table-header") Requester updated 
+                th(class="ticket-table-header") Group 
+                th(class="ticket-table-header") Assignee
+            tbody 
+                each ticket in tickets 
+                    tr(class="ticket-table-row" data=ticket.id)
+                        td(class="ticket-table-data") #{ticket.subject}
+                        td(class="ticket-table-data") #{ticket.status}
+                        td(class="ticket-table-data") #{ticket.updated_at.split('T')[0]}
+
+
