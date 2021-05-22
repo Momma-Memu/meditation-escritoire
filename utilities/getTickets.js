@@ -12,7 +12,6 @@ const getTickets = async (email, password) => {
         credentials: encoded,
     })
     const data =  await res.json();
-    // console.log(data.tickets)
     return data;
 }
 /*

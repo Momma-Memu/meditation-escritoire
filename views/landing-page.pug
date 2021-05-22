@@ -19,6 +19,6 @@ html(lang="en")
                     tr(class="ticket-table-row" data=ticket.id)
                         td(class="ticket-table-data") #{ticket.subject}
                         td(class="ticket-table-data") #{ticket.status}
-                        td(class="ticket-table-data") #{ticket.updated_at.split('T')[0]}
+                        td(class="ticket-table-data") #{new Date(ticket.updated_at).toDateString()}
 
 
