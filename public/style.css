@@ -1,76 +1,7 @@
+@import url('./styles/navbar.css');
+@import url('./styles/table.css');
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(249, 249, 249);
 }
-
-.header-bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 125px;
-    border-radius: 3px;
-    box-shadow: 4px 2px 4px 0px rgba(197, 197, 197, 0.527);
-    margin: 20px;
-    background-color: white;
-}
-
-.header-title{
-    color: black;
-    font-size: 40px;
-    margin-left: 15px;
-    margin-right: auto;
-}
-
-.header-home-button{
-    margin-right: 20px;
-    background-color: rgb(31, 31, 31);
-    color: white;
-    padding: 8px 10px 8px 10px;
-    border-radius: 5px;
-    transition: background-color;
-    transition-duration: 0.5s;
-}
-
-.header-home-button:hover{
-    cursor: pointer;
-    background-color: rgb(75, 75, 75);
-    transition: background-color;
-    transition-duration: 0.5s;
-}
-
-.ticket-table{
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.ticket-table-header{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-}
-
-.ticket-table-data{
-    border: 1px solid rgb(202, 202, 202);
-    padding: 8px;
-}
-
-.ticket-table-row{
-    background-color: #ddd;
-}
-
-.ticket-table-row:hover{
-    background-color: #4CAF50;
-    cursor: pointer;
-}
-
-.ticket-table-row:nth-child(even){
-    background-color: #f7f7f7;
-}
-.ticket-table-row:nth-child(even):hover{
-    background-color: #4CAF50;
-    cursor: pointer;
-}
-
