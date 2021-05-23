@@ -7,7 +7,9 @@ html(lang="en")
     body
         include nav-bar.pug
         div(class="ticket-details-container")
-            span(class='ticket-details-date') #{new Date(ticket.updated_at).toDateString()}
-            div Subject: #{ticket.subject}
-            pre(class="ticket-details-description") #{ticket.description}
-            div Status: #{ticket.status}
+            div(class="ticket-details-header")
+                span(class="ticket-details-user") #{ticket.users[0].name}
+                span(class='ticket-details-date') #{new Date(ticket.ticket.updated_at).toDateString()}
+            div Subject: #{ticket.ticket.subject}
+            pre(class="ticket-details-description") #{ticket.ticket.description}
+            div Status: #{ticket.ticket.status}

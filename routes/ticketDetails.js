@@ -9,7 +9,7 @@ const { zendesk } = require('../config');
 router.get('/details/:id', asyncHandler(async(req, res) => {
     const data = await getOneTicket(zendesk.email, zendesk.password, req.params.id);
 
-    res.render("ticket-details", {ticket: data.results[0]})
+    res.render("ticket-details", {ticket: data})
 }));
 
 

@@ -8,6 +8,11 @@
     box-shadow: 4px 2px 4px 0px rgba(197, 197, 197, 0.527);
 }
 
+.ticket-details-header{
+    display: flex;
+    margin-bottom: 15px;
+}
+
 .ticket-details-date{
     margin-left: auto;
 }
