@@ -1,15 +1,14 @@
 .ticket-table{
-    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
 .ticket-table-header{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
     background-color: #03363D;
     color: white;
+    font-weight: 500;
+    padding: 10px;
+    text-align: left;
 }
 
 .ticket-table-data{

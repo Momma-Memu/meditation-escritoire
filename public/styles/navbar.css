@@ -1,12 +1,12 @@
 .header-bar{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 125px;
+    background-color: white;
     border-radius: 3px;
     box-shadow: 4px 2px 4px 0px rgba(197, 197, 197, 0.527);
+    display: flex;
+    height: 125px;
+    justify-content: center;
     margin: 20px;
-    background-color: white;
 }
 
 .header-title{
@@ -17,18 +17,18 @@
 }
 
 .header-home-button{
-    margin-right: 20px;
     background-color: #045763;
-    color: white;
-    padding: 8px 10px 8px 10px;
     border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+    padding: 8px 10px 8px 10px;
     transition: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 .header-home-button:hover{
     cursor: pointer;
-    background-color: #034B55;
+    background-color: #03363D;
     transition: background-color;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }

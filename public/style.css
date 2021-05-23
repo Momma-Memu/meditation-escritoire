@@ -3,6 +3,6 @@
 @import url('./styles/ticket-details.css');
 
 body{
-    font-family: 'Roboto', sans-serif;
     background-color: rgb(249, 249, 249);
+    font-family: 'Roboto', sans-serif;
 }
