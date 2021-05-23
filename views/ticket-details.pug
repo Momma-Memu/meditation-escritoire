@@ -6,10 +6,13 @@ html(lang="en")
         title Meditation Escritoire
     body
         include nav-bar.pug
-        div(class="ticket-details-container")
-            div(class="ticket-details-header")
-                span(class="ticket-details-user") #{ticket.users[0].name}
-                span(class='ticket-details-date') #{new Date(ticket.ticket.updated_at).toDateString()}
-            div Subject: #{ticket.ticket.subject}
-            pre(class="ticket-details-description") #{ticket.ticket.description}
-            div Status: #{ticket.ticket.status}
+        if ticket.ticket
+            div(class="ticket-details-container")
+                div(class="ticket-details-header")
+                    span(class="ticket-details-user") #{ticket.users[0].name}
+                    span(class='ticket-details-date') #{new Date(ticket.ticket.updated_at).toDateString()}
+                div Subject: #{ticket.ticket.subject}
+                pre(class="ticket-details-description") #{ticket.ticket.description}
+                div Status: #{ticket.ticket.status}
+        else
+            include error-template.pug

@@ -15,8 +15,14 @@ describe('getTickets()', async () => {
         assert(data.tickets.length > 0);
     });
 
-    it('Should not fail do to an authentication error, ie password or email is incorrect', async () => {
+    it('Should not fail due to an authentication error, ie password or email is incorrect', async () => {
         const data = await getTickets(zendesk.email, zendesk.password);
         assert(data.error !== "Couldn't authenticate you")
+    });
+
+    it('Should return an object, with a key "users" where "users" is an array with at least one element', async () => {
+        const data = await getTickets(zendesk.email, zendesk.password);
+        assert(Array.isArray(data.users));
+        assert(data.users.length > 0);
     });
 });

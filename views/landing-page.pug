@@ -7,20 +7,23 @@ html(lang="en")
         title Meditation Escritoire
     body
         include nav-bar.pug
-        table(class="ticket-table")
-            tr(class="ticket-table-row")
-                th(class="ticket-table-header") Subject
-                th(class="ticket-table-header") Requester 
-                th(class="ticket-table-header") Requester updated 
-                th(class="ticket-table-header") Type 
-                th(class="ticket-table-header") Priority
-            tbody 
-                each ticket in tickets.tickets
-                    tr(class="ticket-table-row" data=ticket.id)
-                        td(class="ticket-table-data") #{ticket.subject}
-                        td(class="ticket-table-data") #{tickets.users.filter((user) => ticket.requester_id === user.id)[0].name}
-                        td(class="ticket-table-data") #{new Date(ticket.updated_at).toDateString()}
-                        td(class="ticket-table-data") #{ticket.type ? ticket.type : "Ticket"}
-                        td(class="ticket-table-data") #{ticket.priority ? ticket.priority : "-"}
+        if tickets.tickets
+            table(class="ticket-table")
+                tr(class="ticket-table-row")
+                    th(class="ticket-table-header") Subject
+                    th(class="ticket-table-header") Requester 
+                    th(class="ticket-table-header") Requester updated 
+                    th(class="ticket-table-header") Type 
+                    th(class="ticket-table-header") Priority
+                tbody 
+                    each ticket in tickets.tickets
+                        tr(class="ticket-table-row" data=ticket.id)
+                            td(class="ticket-table-data") #{ticket.subject}
+                            td(class="ticket-table-data") #{tickets.users.filter((user) => ticket.requester_id === user.id)[0].name}
+                            td(class="ticket-table-data") #{new Date(ticket.updated_at).toDateString()}
+                            td(class="ticket-table-data") #{ticket.type ? ticket.type : "Ticket"}
+                            td(class="ticket-table-data") #{ticket.priority ? ticket.priority : "-"}
+        else 
+            include error-template.pug
 
 

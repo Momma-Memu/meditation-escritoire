@@ -1,6 +1,7 @@
 @import url('./styles/navbar.css');
 @import url('./styles/table.css');
 @import url('./styles/ticket-details.css');
+@import url('./styles/error.css');
 
 body{
     background-color: rgb(249, 249, 249);
