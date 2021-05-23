@@ -8,7 +8,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #008a00;
+    background-color: #03363D;
     color: white;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .ticket-table-row:hover{
-    background-color: #008a00;
+    background-color: #045763;
     cursor: pointer;
     color: white;
 }
@@ -31,7 +31,7 @@
     background-color: #f7f7f7;
 }
 .ticket-table-row:nth-child(even):hover{
-    background-color: #008a00;
+    background-color: #045763;
     cursor: pointer;
     color: white;
 }

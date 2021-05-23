@@ -18,7 +18,7 @@
 
 .header-home-button{
     margin-right: 20px;
-    background-color: rgb(31, 31, 31);
+    background-color: #045763;
     color: white;
     padding: 8px 10px 8px 10px;
     border-radius: 5px;
@@ -28,7 +28,7 @@
 
 .header-home-button:hover{
     cursor: pointer;
-    background-color: rgb(75, 75, 75);
+    background-color: #034B55;
     transition: background-color;
     transition-duration: 0.5s;
 }
