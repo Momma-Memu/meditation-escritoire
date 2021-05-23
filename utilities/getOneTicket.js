@@ -8,6 +8,7 @@ const getOneTicket = async (email, password, id) => {
         credentials: encoded,
     })
     const data =  await res.json();
+    console.log(data.results[0].description);
     return data;
 }
 

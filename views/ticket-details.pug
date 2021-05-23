@@ -6,7 +6,8 @@ html(lang="en")
         title Meditation Escritoire
     body
         include nav-bar.pug
-        div
+        div(class="ticket-details-container")
+            span(class='ticket-details-date') #{new Date(ticket.updated_at).toDateString()}
             div Subject: #{ticket.subject}
-            div Description: #{ticket.description}
+            pre(class="ticket-details-description") #{ticket.description}
             div Status: #{ticket.status}

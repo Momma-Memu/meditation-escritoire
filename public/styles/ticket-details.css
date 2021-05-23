@@ -1,0 +1,23 @@
+.ticket-details-container{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 4px 2px 4px 0px rgba(197, 197, 197, 0.527);
+}
+
+.ticket-details-date{
+    margin-left: auto;
+}
+
+.ticket-details-description{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
