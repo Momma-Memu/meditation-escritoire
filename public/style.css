@@ -2,6 +2,7 @@
 @import url('./styles/table.css');
 @import url('./styles/ticket-details.css');
 @import url('./styles/error.css');
+@Import url('./styles/page-buttons.css');
 
 body{
     background-color: rgb(249, 249, 249);

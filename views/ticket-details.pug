@@ -7,12 +7,11 @@ html(lang="en")
     body
         include nav-bar.pug
         if ticket.ticket
+            - const user = ticket.users.filter(user => user.id === ticket.ticket.requester_id)[0]
             div(class="ticket-details-container")
                 div(class="ticket-details-header")
-                    span(class="ticket-details-user") #{ticket.users[0].name}
+                    span(class="ticket-details-user") #{user.name}
                     span(class='ticket-details-date') #{new Date(ticket.ticket.updated_at).toDateString()}
-                div Subject: #{ticket.ticket.subject}
                 pre(class="ticket-details-description") #{ticket.ticket.description}
-                div Status: #{ticket.ticket.status}
         else
             include error-template.pug

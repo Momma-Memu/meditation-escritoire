@@ -10,6 +10,7 @@ html(lang="en")
         if tickets.tickets
             table(class="ticket-table")
                 tr(class="ticket-table-row")
+                    th(class="ticket-table-header") ID
                     th(class="ticket-table-header") Subject
                     th(class="ticket-table-header") Requester 
                     th(class="ticket-table-header") Requester updated 
@@ -18,6 +19,7 @@ html(lang="en")
                 tbody 
                     each ticket in tickets.tickets
                         tr(class="ticket-table-row" data=ticket.id)
+                            td(class="ticket-table-data") #{ticket.id}
                             td(class="ticket-table-data") #{ticket.subject}
                             td(class="ticket-table-data") #{tickets.users.filter((user) => ticket.requester_id === user.id)[0].name}
                             td(class="ticket-table-data") #{new Date(ticket.updated_at).toDateString()}

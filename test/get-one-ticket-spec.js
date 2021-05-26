@@ -22,9 +22,7 @@ describe('getOneTicket()', async () => {
 
     it('Should return an object where the ticket id matches the id passed into the function', async () => {
         const data = await getOneTicket(zendesk.email, zendesk.password, 1);
-        let found = false;
-        if(data.ticket.id === 1) found = true;
-        assert.ok(found);
+        assert.ok(data.ticket.id === 1);
     });
 
     it('Should return an object where the ticket has a requester.id matching one of the users.id', async () => {
