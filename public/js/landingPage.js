@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async(e) => {
             const row = rows[i];
             const id = row.getAttribute("data")
             row.addEventListener('click', () => {
-                window.location.replace(`/details/${id}`)
+                window.location.href =`/details/${id}`;
             })
         }
     }
